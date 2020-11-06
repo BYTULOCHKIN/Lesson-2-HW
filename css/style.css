@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  max-width: 1258px;
+  font-family: "Myriad Pro Regular", "Open Sans", sans-serif;
+  margin: auto;
+}
+
+/* Header section*/
+.nav-bar {
+  margin-top: 30px;
+}
+.nav-bar_item {
+  font-size: 15px;
+  color: #949494;
+  padding-right: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.nav-bar_item:not(:last-child) {
+  padding-right: 30px;
+}
+.separator {
+  display: flex;
+  width: 1265px;
+  background-size: cover;
+  background-position: center;
+  content: url(../img/separator.png);
+  width: 1260px;
+  margin-right: 0px;
+}
+
+/*Main content*/
+.section-recipes {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #5b5b5b;
+  font-size: 35px;
+  text-transform: uppercase;
+  margin: 20px 0px;
+}
+
+.promo {
+  background: url(../img/img__1.jpg);
+  height: 470px;
+  width: 620px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 19px;
+}
+.promo-2 {
+  background: url(../img/img__2.jpg);
+  height: 470px;
+  width: 620px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 19px;
+}
+#promo_text-title {
+  letter-spacing: 0.001em;
+  font-size: 41px;
+  margin: 12px 0px 57px 0px;
+  position: relative;
+}
+#promo_text-title-2 {
+  letter-spacing: 0.001em;
+  font-size: 41px;
+  margin: 12px 0px 57px 0px;
+  position: relative;
+  width: 390px;
+}
