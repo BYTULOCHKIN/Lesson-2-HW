@@ -15,7 +15,7 @@
     <!-- Верхняя часть-->
     <head>
       <div class="nav-bar">
-        <a class="nav-bar_item" href="#recipes-select">Подбор рецептов</a>
+        <a class="nav-bar_item" href="#sel-rec">Подбор рецептов</a>
         <a class="nav-bar_item" href="">Рецепты</a>
         <a class="nav-bar_item" href="">Горячие рецепты</a>
       </div>
@@ -24,26 +24,194 @@
 
     <!-- Центральная часть-->
     <main>
-      <h1 class="section-title">подбор рецептов</h1>
-      <section class="section-recipes" name="recipes-select">
+      <h2 id="sel-rec" class="section-title">подбор рецептов</h2>
+      <section class="section-recipes">
         <!--Первое промо-->
-        <div class="promo">
+        <div class="promo promo-1">
           <div class="promo_text">
             <p>Блюдо дня</p>
-            <p id="promo_text-title">Куриные ножки на гриле</p>
+            <p class="promo_text-title">Куриные ножки на гриле</p>
             <img src="./img/img__icons.png" />
           </div>
         </div>
 
         <!--Второе прмомо-->
 
-        <div class="promo-2">
+        <div class="promo promo-2">
           <div class="promo_text">
             <p>лучшие рецепты недели</p>
-            <p id="promo_text-title-2">7 лучших рецептов недели</p>
+            <p class="promo_text-title title-2">7 лучших рецептов недели</p>
             <img src="./img/img__icons.png" />
           </div>
         </div>
+      </section>
+      <div class="separator"></div>
+
+      <!--Рецепты-->
+
+      <section class="recipes-choise">
+        <h2 class="section-title">рецепты</h2>
+        <!--Селектор категории-->
+        <div>
+          <ul class="menu-list">
+            <li href="www.google.com" class="res_menu-item">Новые рецепты</li>
+            <li class="res_menu-item">Популярное</li>
+            <li class="res_menu-item">Рекомендуем</li>
+          </ul>
+        </div>
+        <div class="recipe-all">
+           <!--Первый рецепт-->
+          <div class="recipe">
+            <div class="recipe-1">
+              <div class="rec-author">
+                <img class="img-author" src="./img/icons/Эллипс 1.png" alt="" />
+                <p>Daria Fedorenko</p>
+              </div>
+            </div>
+
+            <div class="rec-text">
+              <h3 class="recipe-title">
+                Утиные ножки с овощами и <br />
+                грудинкой <br />
+                фасолью
+              </h3>
+              <div class="recipe-list">
+                <div class="recipe-list_item">
+                  <img src="img/icons/time.png" alt="time" srcset="" />
+                  <p>135 мин</p>
+                </div>
+                <div class="recipe-list_item">
+                  <img
+                    class="icons"
+                    src="img/icons/hard.png"
+                    alt="hard"
+                    srcset=""
+                  />
+                  <p>Сложно</p>
+                </div>
+                <div class="recipe-list_item">
+                  <img src="img/icons/kaloriy 3.png" alt="ccal" srcset="" />
+                  <p>125 ккал</p>
+                </div>
+              </div>
+              <p class="howdo">
+                говядина, морковь, масло топлёное, лук репчатый, морковь,
+                редька, перец сладкий, помидоры, томат-пюре, картофель, чеснок,
+                бульон мясной, соль, перец черный, зелень петрушки...
+              </p>
+              <div class="soc-media">
+                <div class="like">
+                  <img class="like-img" src="img/socials/like.png" alt="like" />
+                  <p>16</p>
+                </div>
+                <div>
+                  <a
+                    class="soc-icons"
+                    href="https://www.vk.com"
+                    class="soc-link"
+                  >
+                    <img src="img/socials/vk.png" alt="" />
+                  </a>
+                  <a
+                    class="soc-icons"
+                    href="https://www.facebook.com"
+                    class="soc-link"
+                  >
+                    <img src="img/socials/facebook.png" alt="fb" />
+                  </a>
+                  <a
+                    class="soc-icons"
+                    href="https://www.odnoklassniki.com"
+                    class="soc-link"
+                  >
+                    <img
+                      src="img/socials/odnoklassniki.png"
+                      alt="odnoklassniki"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+           <!--Второй рецепт-->
+             <div class="recipe">
+            <div class="recipe-1 salad">
+              <div class="rec-author">
+                <img class="img-author" src="./img/icons/Эллипс 1.png" alt="" />
+                <p>Hristin Fedorenko</p>
+              </div>
+            </div>
+
+            <div class="rec-text">
+              <h3 class="recipe-title">
+                Салат из свеклы с козьим сыром и медовой заправкой
+              </h3>
+              <div class="recipe-list">
+                <div class="recipe-list_item">
+                  <img src="img/icons/time.png" alt="time" srcset="" />
+                  <p>35 мин</p>
+                </div>
+                <div class="recipe-list_item">
+                  <img
+                    class="icons"
+                    src="img/icons/hard.png"
+                    alt="hard"
+                    srcset=""
+                  />
+                  <p>Cложно</p>
+                </div>
+                <div class="recipe-list_item">
+                  <img src="img/icons/kaloriy 3.png" alt="ccal" srcset="" />
+                  <p>125 ккал</p>
+                </div>
+              </div>
+              <p class="howdo">
+                
+                        говядина, масло топлёное, лук репчатый,
+                        морковь, редька, перец сладкий, помидоры, томат-пюре, картофель...
+              </p>
+              <div class="soc-media">
+                <div class="like">
+                  <img class="like-img" src="img/socials/like.png" alt="like" />
+                  <p>16</p>
+                </div>
+                <div>
+                  <a
+                    class="soc-icons"
+                    href="https://www.vk.com"
+                    class="soc-link"
+                  >
+                    <img src="img/socials/vk.png" alt="" />
+                  </a>
+                  <a
+                    class="soc-icons"
+                    href="https://www.facebook.com"
+                    class="soc-link"
+                  >
+                    <img src="img/socials/facebook.png" alt="fb" />
+                  </a>
+                  <a
+                    class="soc-icons"
+                    href="https://www.odnoklassniki.com"
+                    class="soc-link"
+                  >
+                    <img
+                      src="img/socials/odnoklassniki.png"
+                      alt="odnoklassniki"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+
+
+
+
+        
       </section>
       <div class="separator"></div>
     </main>
