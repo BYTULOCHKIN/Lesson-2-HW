@@ -195,7 +195,7 @@ body {
 .recipe-list_item {
   display: flex;
   box-sizing: content-box;
-  font-size: 11pt;
+  font-size: 14px;
   border: solid 1px #e8e8e8;
   border-radius: 12px;
   color: #b5904e;
