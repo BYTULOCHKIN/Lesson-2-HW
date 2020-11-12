@@ -6,19 +6,24 @@
   list-style-type: none;
 }
 body {
-  max-width: 1258px;
   font-family: "Myriad Pro Regular", "Open Sans", sans-serif;
+  margin: auto;
+}
+header,
+main {
+  max-width: 1258px;
   margin: auto;
 }
 
 /* Header section*/
 .nav-bar {
-  margin: 20px auto;
+  display: flex;
 }
 .nav-bar_item {
   font-size: 15px;
   color: #949494;
-  padding-right: 30px;
+  margin-top: 30px;
+  margin: 29px 30px 29px 0;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -190,7 +195,7 @@ body {
   display: flex;
   justify-content: space-around;
   width: 300px;
-  margin-bottom: auto;
+  margin-bottom: 20px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -230,4 +235,50 @@ body {
 }
 .like-img {
   margin-right: 10px;
+}
+
+/* Горячая подборка*/
+.last-child::before {
+  content: "#";
+}
+
+.recipe-compilation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.recipe-compilation_item {
+  position: relative;
+}
+.compilation_img {
+  max-width: 100%;
+}
+.compilation_img-text {
+  position: absolute;
+  bottom: 55px;
+  left: 0;
+  width: 100%;
+  font-size: 26pt;
+  color: #fff;
+  text-align: center;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+/* Footer*/
+
+.footer {
+  display: flex;
+
+  height: 70px;
+  width: 1367px;
+  margin: 0 auto;
+  box-sizing: content-box;
+  background: #252627;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.nav-footer {
+  padding-left: 55px;
 }
