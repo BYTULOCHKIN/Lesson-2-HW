@@ -145,14 +145,17 @@ body {
 .recipe {
   display: flex;
   width: 623px;
+  height: 308px;
 }
-.recipe-1 {
+.recipe-img {
   width: 306px;
-  background-image: url(../img/dugs_legs.png);
+
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  height: 308px;
+}
+.legs {
+  background-image: url(../img/dugs_legs.png);
 }
 .salad {
   background-image: url(../img/salad.png);
