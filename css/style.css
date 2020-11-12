@@ -21,7 +21,6 @@ body {
   padding-right: 30px;
   text-transform: uppercase;
   text-decoration: none;
-  transition: 1s;
 }
 .nav-bar_item:last-child {
   padding-right: 0px;
