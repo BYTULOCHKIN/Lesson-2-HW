@@ -21,6 +21,7 @@ body {
   padding-right: 30px;
   text-transform: uppercase;
   text-decoration: none;
+  transition: 1s;
 }
 .nav-bar_item:last-child {
   padding-right: 0px;
@@ -195,7 +196,7 @@ body {
 .recipe-list_item {
   display: flex;
   box-sizing: content-box;
-  font-size: 14px;
+  font-size: 11pt;
   border: solid 1px #e8e8e8;
   border-radius: 12px;
   color: #b5904e;
