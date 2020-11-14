@@ -4,29 +4,48 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
+  scroll-behavior: smooth;
 }
 body {
+  cursor: url("../img/icons/kolpak-pekarskiy.png"), auto;
   font-family: "Myriad Pro Regular", "Open Sans", sans-serif;
   margin: auto;
 }
-header,
-main {
+
+.container {
+  max-width: 1260px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
   max-width: 1258px;
   margin: auto;
 }
-
 /* Header section*/
 .nav-bar {
   display: flex;
 }
 .nav-bar_item {
+  margin-top: 30px;
+  margin: 29px 30px 29px 0;
+}
+a {
   font-size: 15px;
   color: #949494;
   margin-top: 30px;
-  margin: 29px 30px 29px 0;
   text-transform: uppercase;
   text-decoration: none;
 }
+.nav-bar_link {
+  transition: border-bottom 0.4s;
+  border-bottom: 2px solid transparent;
+}
+.nav-bar_link:hover {
+  color: #b5904e;
+  border-bottom: 2px solid #b5904e;
+}
+
 .nav-bar_item:last-child {
   padding-right: 0px;
 }
@@ -89,10 +108,16 @@ main {
   text-transform: uppercase;
   text-align: center;
   font-size: 19px;
+  transition: 0.8s;
+}
+.promo:hover {
+  transform: scale(1.02);
+  box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.7);
 }
 .promo-2 {
   background: url(../img/img__2.jpg);
 }
+
 .promo_text-title {
   letter-spacing: 0.001em;
   font-size: 41px;
@@ -131,6 +156,10 @@ main {
   transition: 0.4s;
   color: #fff;
 }
+
+.res_menu-item:nth-child(2):hover .recipe-all {
+  transform: rotate(180deg);
+}
 .recipe-title {
   font-size: 18pt;
   font-weight: lighter;
@@ -145,12 +174,14 @@ main {
   display: flex;
   justify-content: space-between;
   margin-bottom: 31px;
+  transition: transform 1s;
 }
 .recipe {
   display: flex;
   width: 623px;
   height: 308px;
 }
+
 .recipe-img {
   width: 306px;
 
@@ -246,10 +277,18 @@ main {
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
+  height: 490px;
 }
 .recipe-compilation_item {
   position: relative;
+  transition: transform 0.6s, box-shadow 0.2s;
 }
+.recipe-compilation_item:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
 .compilation_img {
   max-width: 100%;
 }
@@ -269,14 +308,10 @@ main {
 
 .footer {
   display: flex;
-
-  height: 70px;
-  width: 1367px;
   margin: 0 auto;
   box-sizing: content-box;
   background: #252627;
   text-decoration: none;
-  margin-bottom: 10px;
 }
 
 .nav-footer {
