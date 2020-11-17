@@ -25,6 +25,7 @@ body {
 /* Header section*/
 .nav-bar {
   display: flex;
+  padding: 0 10px;
 }
 .nav-bar_item {
   margin-top: 30px;
@@ -57,7 +58,9 @@ a {
   position: relative;
   margin: 0px auto;
 }
-
+.separator_conteiner {
+  overflow: hidden;
+}
 .separator::before {
   right: 70px;
   top: 50%;
@@ -74,6 +77,7 @@ a {
   background-color: #949494;
   position: absolute;
   opacity: 60%;
+  overflow: hidden;
 }
 
 /*Main content*/
@@ -226,7 +230,7 @@ a {
   display: flex;
   justify-content: space-around;
   width: 300px;
-  margin-bottom: auto;
+  margin-bottom: 20px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -277,7 +281,7 @@ a {
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
-  height: 490px;
+  max-height: 490px;
 }
 .recipe-compilation_item {
   position: relative;
@@ -316,4 +320,14 @@ a {
 
 .nav-footer {
   padding-left: 55px;
+}
+
+@media (max-width: 1262px) {
+  .recipe-all {
+    display: flex;
+    flex-direction: column;
+  }
+  .recipe {
+    margin: 5px auto;
+  }
 }
